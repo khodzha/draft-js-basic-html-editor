@@ -6,7 +6,7 @@ export default function InlineStyleControls(props) {
   var currentStyle = props.editorState.getCurrentInlineStyle();
 
   return (
-    <div className="RichEditor-controls">
+    <span className="RichEditor-controls">
       {inlineStyles.map(type =>
         <StyleButton
           key={type.label}
@@ -16,6 +16,6 @@ export default function InlineStyleControls(props) {
           style={type.style}
         />
       )}
-    </div>
+    </span>
   );
 }

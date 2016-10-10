@@ -11,7 +11,7 @@ export default function BlockStyleControls(props) {
     .getType();
 
   return (
-    <div className="RichEditor-controls">
+    <span className="RichEditor-controls">
       {blockTypes.map((type) =>
         <StyleButton
           key={type.label}
@@ -21,6 +21,6 @@ export default function BlockStyleControls(props) {
           style={type.style}
         />
       )}
-    </div>
+    </span>
   );
 }

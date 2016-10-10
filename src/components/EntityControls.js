@@ -6,7 +6,7 @@ export default function EntityControls(props) {
   let { entityControls } = props;
   var currentStyle = props.editorState.getCurrentInlineStyle();
   return (
-    <div className="RichEditor-controls">
+    <span className="RichEditor-controls">
       {entityControls.map(type =>
         <StyleButton
           key={type.label}
@@ -15,6 +15,6 @@ export default function EntityControls(props) {
           onToggle={type. action}
         />
       )}
-    </div>
+    </span>
   );
 }
